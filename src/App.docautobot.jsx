@@ -9,7 +9,7 @@ import Features from './components/Features';
 import Demo from './components/Demo';
 import SecondaryCTA from './components/SecondaryCTA';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const AppContent = () => {
   const { isDarkMode } = useTheme();
