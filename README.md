@@ -1,92 +1,58 @@
-# Doc-Autobot Website
+# Doc Autobot: Your AI-Powered Documentation Assistant
 
-This is the landing page for Doc-Autobot, a tool that helps you automate documentation.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+**Tired of writing documentation? Let AI do the heavy lifting!**
 
-*   **Hero Section:** A welcoming section that introduces Doc-Autobot.
-*   **Features Section:** Highlights the key features of Doc-Autobot.
-*   **Demo Section:** Provides a demonstration of how Doc-Autobot works.
-*   **Secondary CTA Section:** Encourages users to take a secondary action.
-*   **Footer:** Contains links to important pages and social media.
-*   **Dark Mode:** The website can be viewed in both light and dark mode.
+Doc Autobot is a powerful CLI tool that automatically generates `README.md` and `CONTRIBUTING.md` files for your projects. By leveraging the power of Gemini AI, Doc Autobot creates comprehensive and professional documentation in seconds, allowing you to focus on what you do best: coding.
 
-## Technologies Used
+## Key Features
 
-*   [React](https://reactjs.org/)
-*   [Vite](https://vitejs.dev/)
-*   [Material-UI](https://mui.com/)
-*   [Tailwind CSS](https://tailwindcss.com/)
-*   [Font Awesome](https://fontawesome.com/)
+*   **AI-Powered `README.md` Generation:** Automatically creates a detailed `README.md` by analyzing your project's content.
+*   **Templated `CONTRIBUTING.md` Generation:** Quickly generates a standard `CONTRIBUTING.md` file.
+*   **Interactive Wizard**: If you run the tool without commands, a user-friendly wizard guides you through the options.
+*   **Multiple Commands**: Offers dedicated commands for generating specific files.
+*   **Project Context Awareness**: Fetches details from `package.json` to inform documentation generation.
+*   **Tech Stack Agnostic**: Useful for any type of project.
 
-## Getting Started
+## How It Works
 
-### Prerequisites
+Doc Autobot works by scanning your project's files and using the Gemini AI to understand the purpose and functionality of your code. It then uses this understanding to generate a `README.md` file that accurately describes your project. The `CONTRIBUTING.md` file is generated from a standardized template that can be easily customized.
 
-*   [Node.js](https://nodejs.org/en/) (v14 or higher)
-*   [npm](https://www.npmjs.com/)
 
-### Installation
+## Environment Variables
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/doc-autobot-website.git
-    ```
-2.  Navigate to the project directory:
-    ```sh
-    cd doc-autobot-website
-    ```
-3.  Install the dependencies:
-    ```sh
-    npm install
-    ```
+To use the AI-powered features of Doc Autobot, you need to set up your Gemini API key.
 
-### Running the Development Server
-
-To start the development server, run the following command:
-
-```sh
-npm run dev
-```
-
-This will start the development server at `http://localhost:5173`.
-
-### Building for Production
-
-To build the project for production, run the following command:
-
-```sh
-npm run build
-```
-
-This will create a `dist` directory with the production-ready files.
-
-## Project Structure
+1.  Create a `.env` file in the root of your project.
+2.  Add the following line to the `.env` file:
 
 ```
-.
-├── public
-│   └── ...
-├── src
-│   ├── components
-│   │   ├── Demo.jsx
-│   │   ├── Features.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   └── SecondaryCTA.jsx
-│   ├── contexts
-│   │   └── ThemeContext.jsx
-│   ├── theme
-│   │   └── index.js
-│   ├── App.docautobot.jsx
-│   └── ...
-├── .gitignore
-├── index.html
-├── package.json
-└── ...
+GEMINI_API_KEY=your_api_key
 ```
+
+Replace `your_api_key` with your actual Gemini API key.
+
+## Get Started
+
+Ready to automate your documentation process? Install Doc Autobot today and see the magic happen!
+
+```bash
+npm install -g doc-autobot
+```
+
+Once installed, navigate to your project's root directory and run the following command:
+
+```bash
+doc-autobot
+```
+
+This will launch the interactive wizard, which will guide you through the process of generating your documentation.
+
+## Contributing
+
+We welcome contributions from the community! If you have an idea for a new feature or have found a bug, please open an issue on our [GitHub repository](https://github.com/hemantpatel011/doc-autobot).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Doc Autobot is licensed under the MIT License. See the [LICENSE](https://github.com/hemantpatel011/doc-autobot/blob/main/LICENSE) file for more information.
