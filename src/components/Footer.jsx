@@ -45,7 +45,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon 
                 icon={faSquareGithub} 
-                className="text-2xl group-hover:scale-110 transition-transform duration-300" 
+                className="text-2xl text-blue-400 group-hover:scale-110 transition-transform duration-300" 
               />
               <Typography variant="body1" className="font-medium text-blue-400">
                 View on GitHub
@@ -63,7 +63,7 @@ const Footer = () => {
             >
               <FontAwesomeIcon 
                 icon={faLinkedin} 
-                className="text-2xl group-hover:scale-110 transition-transform duration-300" 
+                className="text-2xl text-blue-400 group-hover:scale-110 transition-transform duration-300" 
               />
               <Typography variant="body1" className="font-medium text-blue-400">
                 Hemant Patel
