@@ -9,6 +9,7 @@ import Features from './components/Features';
 import Demo from './components/Demo';
 import SecondaryCTA from './components/SecondaryCTA';
 import Footer from './components/Footer';
+import { Analytics } from "@vercel/analytics/next"
 
 const AppContent = () => {
   const { isDarkMode } = useTheme();
@@ -24,6 +25,7 @@ const AppContent = () => {
             : 'bg-white text-gray-900'
         }`}
       >
+        <Analytics />
         {/* Header */}
         <Header />
         
