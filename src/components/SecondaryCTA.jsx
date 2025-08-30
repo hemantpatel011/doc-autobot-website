@@ -173,7 +173,7 @@ const SecondaryCTA = () => {
                       <Typography variant="body2" sx={{ fontSize: '0.875rem' }}>
                         Add: <code className={`px-2 py-1 rounded font-mono ${
                           isDarkMode ? 'bg-gray-800 text-emerald-300' : 'bg-gray-200 text-emerald-700'
-                        }`}>GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE</code>
+                        }`}>GEMINI_API_KEY=YOUR_GEMINI_API_KEY</code>
                       </Typography>
                     </Box>
                   </Box>

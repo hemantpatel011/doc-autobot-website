@@ -18,7 +18,7 @@ const Footer = () => {
           <Box className="mb-8">
             <Typography 
               variant="h4" 
-              className="mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold"
+              className="mb-4 text-blue-400 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold"
               sx={{ fontSize: { xs: '1.5rem', sm: '2rem' } }}
             >
               doc-autobot 🤖
@@ -47,7 +47,7 @@ const Footer = () => {
                 icon={faSquareGithub} 
                 className="text-2xl group-hover:scale-110 transition-transform duration-300" 
               />
-              <Typography variant="body1" className="font-medium">
+              <Typography variant="body1" className="font-medium text-blue-400">
                 View on GitHub
               </Typography>
             </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/hemant-patel-a67031341/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex items-center gap-3 hover:text-blue-400 transition-colors duration-300 no-underline ${
+              className={`group flex items-center gap-3 hover:text-blue-400 transition-colors duration-300  ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}
             >
@@ -65,7 +65,7 @@ const Footer = () => {
                 icon={faLinkedin} 
                 className="text-2xl group-hover:scale-110 transition-transform duration-300" 
               />
-              <Typography variant="body1" className="font-medium">
+              <Typography variant="body1" className="font-medium text-blue-400">
                 Hemant Patel
               </Typography>
             </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
                 href="https://opensource.org/licenses/MIT" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 no-underline"
+                className=" hover:text-cyan-300 transition-colors duration-300"
               >
                 MIT License
               </Link>

@@ -88,7 +88,7 @@ const Hero = () => {
       </Box>
 
       <Container maxWidth="xl" className="relative z-10">
-        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-8 items-center min-h-[100vh]">
+        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-6 ps-3 pt-14 items-center min-h-[100vh]">
           {/* Left Column - Content */}
           <Box className="text-center lg:text-left">
             {/* Glowing Animated Badge */}
@@ -105,7 +105,7 @@ const Hero = () => {
                   }`}
                   sx={{ fontSize: '0.875rem' }}
                 >
-                 AI-Powered Documentation Generator
+                 AI-Powered
                 </Typography>
                 <Box className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-400/20 blur-md animate-pulse"></Box>
               </Box>
@@ -114,13 +114,13 @@ const Hero = () => {
             {/* Main Headline */}
             <Typography 
               variant="h1" 
-              className={`mb-6 font-bold ${
+              className={`mb-6 py-4 font-bold ${
                 isDarkMode 
                   ? 'bg-gradient-to-r from-white via-cyan-200 to-cyan-400 bg-clip-text text-transparent' 
                   : 'text-gray-900'
               }`}
               sx={{ 
-                fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem', lg: '4.5rem' },
+                fontSize: { xs: '2.9rem', sm: '3.5rem', md: '4rem', lg: '4.5rem' },
                 lineHeight: 0.9
               }}
             >
