@@ -148,10 +148,10 @@ const Hero = () => {
             <Box className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
               {/* Primary CTA - Install Command */}
               <Button
-                variant="contained"
+                variant="outlined"
                 size="large"
                 onClick={handleCopyCommand}
-                className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold px-8  rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25"
+                className="group relative overflow-hidden  text-white font-semibold px-8  rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/25"
                 startIcon={<FontAwesomeIcon icon={faClone} className="text-lg" />}
                 sx={{
                   textTransform: 'none',
@@ -164,24 +164,25 @@ const Hero = () => {
                 <Box className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></Box>
               </Button>
 
-              {/* Secondary CTA - GitHub */}
+              {/* Secondary CTA - npmjs */}
               <Button
-                variant="outlined"
-                size="large"
-                href="https://github.com/hemantpatel011/doc-autobot/blob/main/README.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group border-2 border-gray-600 text-white hover:border-cyan-400 hover:text-cyan-400 font-semibold px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20"
-                startIcon={<FontAwesomeIcon icon={faSquareGithub} className="text-xl" />}
-                sx={{
-                  textTransform: 'none',
-                  fontSize: '1.10rem',
-                  minWidth: '200px',
-                  height: '48px'
-                }}
-              >
-                View on GitHub
-              </Button>
+                                         variant="contained"
+                                         size="large"
+                                         href="https://www.npmjs.com/package/doc-autobot"
+                                         target="_blank"
+                                         rel="noopener noreferrer"
+                                         className="group border-2 border-gray-600 text-white hover:border-cyan-400 hover:text-cyan-400 font-semibold px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20"
+                                         sx={{
+                                           textTransform: 'none',
+                                           fontSize: '1.10rem',
+                                           minWidth: '200px',
+                                           height: '48px'
+                                         }}
+                                       >
+                                         Get Started
+                                       </Button>
+
+
             </Box>
 
            

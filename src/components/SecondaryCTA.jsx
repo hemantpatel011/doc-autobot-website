@@ -3,6 +3,7 @@ import { Box, Typography, Container, Button, Snackbar, Alert, Paper } from '@mui
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClone, faLightbulb, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from '../contexts/ThemeContext';
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
 const SecondaryCTA = () => {
   const { isDarkMode } = useTheme();
@@ -68,23 +69,24 @@ const SecondaryCTA = () => {
           </Typography>
 
 
-           {/* Secondary CTA - npmjs */}
-                          <Button
-                            variant="contained"
-                            size="large"
-                            href="https://www.npmjs.com/package/doc-autobot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group border-2 border-gray-600 text-white hover:border-cyan-400 hover:text-cyan-400 font-semibold px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20"
-                            sx={{
-                              textTransform: 'none',
-                              fontSize: '1.10rem',
-                              minWidth: '200px',
-                              height: '48px'
-                            }}
-                          >
-                            Get Started
-                          </Button>
+           {/* Secondary CTA - GitHub */}
+                            <Button
+                                          variant="contained"
+                                          size="large"
+                                          href="https://github.com/hemantpatel011/doc-autobot/blob/main/README.md"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          className="group border-2 border-gray-600 text-white hover:border-cyan-400 hover:text-cyan-400 font-semibold px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20"
+                                          startIcon={<FontAwesomeIcon icon={faSquareGithub} className="text-xl" />}
+                                          sx={{
+                                            textTransform: 'none',
+                                            fontSize: '1.10rem',
+                                            minWidth: '200px',
+                                            height: '48px'
+                                          }}
+                                        >
+                                          View on GitHub
+                                        </Button>
 
           {/* Trust Indicators */}
           <Box className={`flex flex-col pt-12 sm:flex-row items-center justify-center gap-8 ${
