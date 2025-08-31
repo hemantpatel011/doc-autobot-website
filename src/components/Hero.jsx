@@ -113,7 +113,7 @@ const Hero = () => {
       </Box>
 
       <Container maxWidth="xl" className="relative z-10">
-        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-6 ps-3 pt-14 items-center min-h-[100vh]">
+        <Box className="grid grid-cols-1 lg:grid-cols-2 gap-6 ps-3 md:mt-[-4rem] items-center min-h-[100vh]">
           {/* Left Column - Content */}
           <Box className="text-center lg:text-left">
             {/* Glowing Animated Badge */}
@@ -154,17 +154,17 @@ const Hero = () => {
                 lineHeight: 0.9,
               }}
             >
-              Automate Your Documentation.
+             <h1> Automate Your Documentation.
               <br />
               <span className={isDarkMode ? "text-cyan-400" : "text-cyan-600"}>
                 Instantly.
-              </span>
+              </span></h1>
             </Typography>
 
             {/* Sub-headline */}
             <Typography
               variant="h4"
-              className={`mb-8 py-4 leading-relaxed ${
+              className={`pb-8 leading-relaxed ${
                 isDarkMode ? "text-gray-400" : "text-gray-500"
               }`}
               sx={{
@@ -173,9 +173,9 @@ const Hero = () => {
                 maxWidth: { lg: "90%" },
               }}
             >
-              AI-powered CLI tool that automatically generates comprehensive{" "}
+            <p>  AI-powered CLI tool that automatically generates comprehensive{" "}
               <strong>README.md</strong> and <strong>CONTRIBUTING.md</strong>{" "}
-              files for your projects. Save time, focus on code.
+              files for your projects. Save time, focus on code.</p>
             </Typography>
 
             {/* CTA Buttons */}

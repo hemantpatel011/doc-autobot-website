@@ -68,7 +68,7 @@ const Features = () => {
       <Container maxWidth="lg" className="relative z-10">
         {/* Pro Tip Section */}
         <Paper
-          className=" md:mt-[-12.5rem] flex md:mx-60  justify-center content-center bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/30 backdrop-blur-sm"
+          className=" md:mt-[-14.2rem] flex md:mx-60  justify-center content-center bg-gradient-to-r from-blue-900/20 to-cyan-900/20 border border-blue-500/30 backdrop-blur-sm"
           elevation={0}
           sx={{
             borderRadius: "16px",
