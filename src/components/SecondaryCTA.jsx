@@ -181,9 +181,9 @@ const SecondaryCTA = () => {
                   <Box className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></Box>
                   <Typography variant="body2" sx={{ fontSize: "0.875rem" }}>
                     Obtain your key from{" "}
-                    <span className="text-cyan-400 font-medium">
+                    <a href="https://aistudio.google.com/app/apikey" target="_blank" className="text-cyan-400 font-medium">
                       Google AI Studio
-                    </span>
+                    </a>
                   </Typography>
                 </Box>
                 <Box
